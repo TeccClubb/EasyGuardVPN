@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA35564C2E066F0C003550C7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35564B2E066F0C003550C7 /* HomeVC.swift */; };
+		FA35565B2E069549003550C7 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35565A2E069549003550C7 /* AccountInfo.swift */; };
+		FA35565E2E09D5E9003550C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA35565D2E09D5E9003550C7 /* Extensions.swift */; };
+		FA45D00D2E141C5800746785 /* LocationCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D00B2E141C5800746785 /* LocationCollCell.swift */; };
+		FA45D00E2E141C5800746785 /* LocationCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA45D00C2E141C5800746785 /* LocationCollCell.xib */; };
+		FA45D0112E1424D700746785 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA45D0102E1424D700746785 /* Alamofire */; };
+		FA45D0132E1424D700746785 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FA45D0122E1424D700746785 /* AlamofireDynamic */; };
+		FA45D0162E14F56E00746785 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0152E14F56E00746785 /* NetworkManager.swift */; };
+		FA45D0182E14F63D00746785 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0172E14F63D00746785 /* API.swift */; };
+		FA45D01A2E14F6FC00746785 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0192E14F6FC00746785 /* APIConstants.swift */; };
+		FA45D01E2E15073400746785 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D01D2E15073400746785 /* LoginDataModel.swift */; };
+		FA45D0202E1542DC00746785 /* ServerListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D01F2E1542DC00746785 /* ServerListDataModel.swift */; };
+		FA45D0222E1570B800746785 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0212E1570B800746785 /* UserDataModel.swift */; };
+		FA45D0632E165FC400746785 /* FocusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0622E165FC400746785 /* FocusableView.swift */; };
+		FA45D0A22E169C9300746785 /* keycahin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0A02E169C9300746785 /* keycahin.swift */; };
+		FA45D0A32E169C9300746785 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45D0A12E169C9300746785 /* VPNManager.swift */; };
+		FA468AC72E065078001B1436 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468AC62E065078001B1436 /* LoginVC.swift */; };
+		FA8077D92E017AA2007CA87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8077D82E017AA2007CA87A /* AppDelegate.swift */; };
+		FA8077DE2E017AA2007CA87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8077DC2E017AA2007CA87A /* Main.storyboard */; };
+		FA8077E02E017AA5007CA87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8077DF2E017AA5007CA87A /* Assets.xcassets */; };
+		FA8077ED2E017AA5007CA87A /* EtherGuardVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8077EC2E017AA5007CA87A /* EtherGuardVPNTests.swift */; };
+		FA8077F72E017AA5007CA87A /* EtherGuardVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8077F62E017AA5007CA87A /* EtherGuardVPNUITests.swift */; };
+		FA8077F92E017AA5007CA87A /* EtherGuardVPNUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8077F82E017AA5007CA87A /* EtherGuardVPNUITestsLaunchTests.swift */; };
+		FA94F14A2E12653F0000E5DB /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F1492E12653F0000E5DB /* SettingVC.swift */; };
+		FA94F14E2E12667B0000E5DB /* SettingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F14C2E12667B0000E5DB /* SettingTableCell.swift */; };
+		FA94F14F2E12667B0000E5DB /* SettingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA94F14D2E12667B0000E5DB /* SettingTableCell.xib */; };
+		FA94F1512E126D860000E5DB /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F1502E126D860000E5DB /* SettingModel.swift */; };
+		FA94F1542E128D210000E5DB /* BaseFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F1532E128D210000E5DB /* BaseFocusViewController.swift */; };
+		FA94F1562E12AC850000E5DB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F1552E12AC850000E5DB /* ToggleButton.swift */; };
+		FA94F1582E12B5660000E5DB /* Inter-VariableFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA94F1572E12B5650000E5DB /* Inter-VariableFont.ttf */; };
+		FA94F15D2E12BB190000E5DB /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94F15C2E12BB190000E5DB /* LaunchVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA8077E92E017AA5007CA87A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8077CD2E017AA2007CA87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8077D42E017AA2007CA87A;
+			remoteInfo = EtherGuardVPN;
+		};
+		FA8077F32E017AA5007CA87A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8077CD2E017AA2007CA87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8077D42E017AA2007CA87A;
+			remoteInfo = EtherGuardVPN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA35564B2E066F0C003550C7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FA35565A2E069549003550C7 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		FA35565D2E09D5E9003550C7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA45D00B2E141C5800746785 /* LocationCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationCollCell.swift; path = EtherGuardVPN/ViewControllers/HomeViewController/XIbs/LocationCollCell.swift; sourceTree = SOURCE_ROOT; };
+		FA45D00C2E141C5800746785 /* LocationCollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LocationCollCell.xib; path = EtherGuardVPN/ViewControllers/HomeViewController/XIbs/LocationCollCell.xib; sourceTree = SOURCE_ROOT; };
+		FA45D0152E14F56E00746785 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA45D0172E14F63D00746785 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FA45D0192E14F6FC00746785 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		FA45D01D2E15073400746785 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		FA45D01F2E1542DC00746785 /* ServerListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListDataModel.swift; sourceTree = "<group>"; };
+		FA45D0212E1570B800746785 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		FA45D0622E165FC400746785 /* FocusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusableView.swift; sourceTree = "<group>"; };
+		FA45D0A02E169C9300746785 /* keycahin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = keycahin.swift; sourceTree = "<group>"; };
+		FA45D0A12E169C9300746785 /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		FA468AC62E065078001B1436 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FA8077D52E017AA2007CA87A /* EtherGuardVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtherGuardVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8077D82E017AA2007CA87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA8077DD2E017AA2007CA87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA8077DF2E017AA5007CA87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA8077E82E017AA5007CA87A /* EtherGuardVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherGuardVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8077EC2E017AA5007CA87A /* EtherGuardVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherGuardVPNTests.swift; sourceTree = "<group>"; };
+		FA8077F22E017AA5007CA87A /* EtherGuardVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherGuardVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8077F62E017AA5007CA87A /* EtherGuardVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherGuardVPNUITests.swift; sourceTree = "<group>"; };
+		FA8077F82E017AA5007CA87A /* EtherGuardVPNUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherGuardVPNUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA94F1492E12653F0000E5DB /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		FA94F14C2E12667B0000E5DB /* SettingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableCell.swift; sourceTree = "<group>"; };
+		FA94F14D2E12667B0000E5DB /* SettingTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableCell.xib; sourceTree = "<group>"; };
+		FA94F1502E126D860000E5DB /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		FA94F1522E126E3D0000E5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA94F1532E128D210000E5DB /* BaseFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFocusViewController.swift; sourceTree = "<group>"; };
+		FA94F1552E12AC850000E5DB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		FA94F1572E12B5650000E5DB /* Inter-VariableFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-VariableFont.ttf"; path = "../../../../Inter,Poppins/Inter/Inter-VariableFont.ttf"; sourceTree = "<group>"; };
+		FA94F15C2E12BB190000E5DB /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA8077D22E017AA2007CA87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA45D0112E1424D700746785 /* Alamofire in Frameworks */,
+				FA45D0132E1424D700746785 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077E52E017AA5007CA87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077EF2E017AA5007CA87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA35564A2E066E5D003550C7 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA35564B2E066F0C003550C7 /* HomeVC.swift */,
+				FA45D01B2E14F90100746785 /* XIbs */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		FA3556572E0694D1003550C7 /* AccountInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				FA35565A2E069549003550C7 /* AccountInfo.swift */,
+			);
+			path = AccountInfoVC;
+			sourceTree = "<group>";
+		};
+		FA35565C2E09D5C5003550C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA35565D2E09D5E9003550C7 /* Extensions.swift */,
+				FA45D0622E165FC400746785 /* FocusableView.swift */,
+				FA94F1552E12AC850000E5DB /* ToggleButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA45D0142E14F54A00746785 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D0A42E169CA600746785 /* VPNManager */,
+				FA45D0A52E169CC000746785 /* APIManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FA45D01B2E14F90100746785 /* XIbs */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D00B2E141C5800746785 /* LocationCollCell.swift */,
+				FA45D00C2E141C5800746785 /* LocationCollCell.xib */,
+			);
+			path = XIbs;
+			sourceTree = "<group>";
+		};
+		FA45D01C2E15071A00746785 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D01D2E15073400746785 /* LoginDataModel.swift */,
+				FA45D01F2E1542DC00746785 /* ServerListDataModel.swift */,
+				FA45D0212E1570B800746785 /* UserDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA45D09F2E169C1800746785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8077DC2E017AA2007CA87A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA45D0A42E169CA600746785 /* VPNManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D0A02E169C9300746785 /* keycahin.swift */,
+				FA45D0A12E169C9300746785 /* VPNManager.swift */,
+			);
+			path = VPNManager;
+			sourceTree = "<group>";
+		};
+		FA45D0A52E169CC000746785 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA45D0192E14F6FC00746785 /* APIConstants.swift */,
+				FA45D0152E14F56E00746785 /* NetworkManager.swift */,
+				FA45D0172E14F63D00746785 /* API.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		FA45D0A72E16A2AA00746785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA8077DF2E017AA5007CA87A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA468AC42E065044001B1436 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F15B2E12BAF70000E5DB /* LaunchViewController */,
+				FA468AC52E065056001B1436 /* Authentication */,
+				FA35564A2E066E5D003550C7 /* HomeViewController */,
+				FA3556572E0694D1003550C7 /* AccountInfoVC */,
+				FA94F1482E1264DD0000E5DB /* SettingViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA468AC52E065056001B1436 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FA468AC62E065078001B1436 /* LoginVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FA8077CC2E017AA2007CA87A = {
+			isa = PBXGroup;
+			children = (
+				FA8077D72E017AA2007CA87A /* EtherGuardVPN */,
+				FA8077EB2E017AA5007CA87A /* EtherGuardVPNTests */,
+				FA8077F52E017AA5007CA87A /* EtherGuardVPNUITests */,
+				FA8077D62E017AA2007CA87A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA8077D62E017AA2007CA87A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA8077D52E017AA2007CA87A /* EtherGuardVPN.app */,
+				FA8077E82E017AA5007CA87A /* EtherGuardVPNTests.xctest */,
+				FA8077F22E017AA5007CA87A /* EtherGuardVPNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8077D72E017AA2007CA87A /* EtherGuardVPN */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F1572E12B5650000E5DB /* Inter-VariableFont.ttf */,
+				FA94F1522E126E3D0000E5DB /* Info.plist */,
+				FA8077D82E017AA2007CA87A /* AppDelegate.swift */,
+				FA94F1532E128D210000E5DB /* BaseFocusViewController.swift */,
+				FA45D0142E14F54A00746785 /* Manager */,
+				FA45D01C2E15071A00746785 /* Models */,
+				FA468AC42E065044001B1436 /* ViewControllers */,
+				FA45D09F2E169C1800746785 /* Views */,
+				FA45D0A72E16A2AA00746785 /* Resources */,
+				FA35565C2E09D5C5003550C7 /* Extensions */,
+			);
+			path = EtherGuardVPN;
+			sourceTree = "<group>";
+		};
+		FA8077EB2E017AA5007CA87A /* EtherGuardVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA8077EC2E017AA5007CA87A /* EtherGuardVPNTests.swift */,
+			);
+			path = EtherGuardVPNTests;
+			sourceTree = "<group>";
+		};
+		FA8077F52E017AA5007CA87A /* EtherGuardVPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA8077F62E017AA5007CA87A /* EtherGuardVPNUITests.swift */,
+				FA8077F82E017AA5007CA87A /* EtherGuardVPNUITestsLaunchTests.swift */,
+			);
+			path = EtherGuardVPNUITests;
+			sourceTree = "<group>";
+		};
+		FA94F1482E1264DD0000E5DB /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F1492E12653F0000E5DB /* SettingVC.swift */,
+				FA94F15E2E12C9620000E5DB /* Model */,
+				FA94F14B2E1266160000E5DB /* Xibs */,
+			);
+			path = SettingViewController;
+			sourceTree = "<group>";
+		};
+		FA94F14B2E1266160000E5DB /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F14C2E12667B0000E5DB /* SettingTableCell.swift */,
+				FA94F14D2E12667B0000E5DB /* SettingTableCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		FA94F15B2E12BAF70000E5DB /* LaunchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F15C2E12BB190000E5DB /* LaunchVC.swift */,
+			);
+			path = LaunchViewController;
+			sourceTree = "<group>";
+		};
+		FA94F15E2E12C9620000E5DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA94F1502E126D860000E5DB /* SettingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA8077D42E017AA2007CA87A /* EtherGuardVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8077FC2E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPN" */;
+			buildPhases = (
+				FA8077D12E017AA2007CA87A /* Sources */,
+				FA8077D22E017AA2007CA87A /* Frameworks */,
+				FA8077D32E017AA2007CA87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EtherGuardVPN;
+			packageProductDependencies = (
+				FA45D0102E1424D700746785 /* Alamofire */,
+				FA45D0122E1424D700746785 /* AlamofireDynamic */,
+			);
+			productName = EtherGuardVPN;
+			productReference = FA8077D52E017AA2007CA87A /* EtherGuardVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA8077E72E017AA5007CA87A /* EtherGuardVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8077FF2E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPNTests" */;
+			buildPhases = (
+				FA8077E42E017AA5007CA87A /* Sources */,
+				FA8077E52E017AA5007CA87A /* Frameworks */,
+				FA8077E62E017AA5007CA87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8077EA2E017AA5007CA87A /* PBXTargetDependency */,
+			);
+			name = EtherGuardVPNTests;
+			productName = EtherGuardVPNTests;
+			productReference = FA8077E82E017AA5007CA87A /* EtherGuardVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA8077F12E017AA5007CA87A /* EtherGuardVPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8078022E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPNUITests" */;
+			buildPhases = (
+				FA8077EE2E017AA5007CA87A /* Sources */,
+				FA8077EF2E017AA5007CA87A /* Frameworks */,
+				FA8077F02E017AA5007CA87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8077F42E017AA5007CA87A /* PBXTargetDependency */,
+			);
+			name = EtherGuardVPNUITests;
+			productName = EtherGuardVPNUITests;
+			productReference = FA8077F22E017AA5007CA87A /* EtherGuardVPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA8077CD2E017AA2007CA87A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FA8077D42E017AA2007CA87A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FA8077E72E017AA5007CA87A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FA8077D42E017AA2007CA87A;
+					};
+					FA8077F12E017AA5007CA87A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FA8077D42E017AA2007CA87A;
+					};
+				};
+			};
+			buildConfigurationList = FA8077D02E017AA2007CA87A /* Build configuration list for PBXProject "EtherGuardVPN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA8077CC2E017AA2007CA87A;
+			packageReferences = (
+				FA45D00F2E1424D700746785 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = FA8077D62E017AA2007CA87A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA8077D42E017AA2007CA87A /* EtherGuardVPN */,
+				FA8077E72E017AA5007CA87A /* EtherGuardVPNTests */,
+				FA8077F12E017AA5007CA87A /* EtherGuardVPNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA8077D32E017AA2007CA87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8077E02E017AA5007CA87A /* Assets.xcassets in Resources */,
+				FA8077DE2E017AA2007CA87A /* Main.storyboard in Resources */,
+				FA94F1582E12B5660000E5DB /* Inter-VariableFont.ttf in Resources */,
+				FA45D00E2E141C5800746785 /* LocationCollCell.xib in Resources */,
+				FA94F14F2E12667B0000E5DB /* SettingTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077E62E017AA5007CA87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077F02E017AA5007CA87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA8077D12E017AA2007CA87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA94F15D2E12BB190000E5DB /* LaunchVC.swift in Sources */,
+				FA94F14A2E12653F0000E5DB /* SettingVC.swift in Sources */,
+				FA35565E2E09D5E9003550C7 /* Extensions.swift in Sources */,
+				FA45D01E2E15073400746785 /* LoginDataModel.swift in Sources */,
+				FA45D0162E14F56E00746785 /* NetworkManager.swift in Sources */,
+				FA35564C2E066F0C003550C7 /* HomeVC.swift in Sources */,
+				FA45D0222E1570B800746785 /* UserDataModel.swift in Sources */,
+				FA35565B2E069549003550C7 /* AccountInfo.swift in Sources */,
+				FA45D0182E14F63D00746785 /* API.swift in Sources */,
+				FA94F1542E128D210000E5DB /* BaseFocusViewController.swift in Sources */,
+				FA8077D92E017AA2007CA87A /* AppDelegate.swift in Sources */,
+				FA45D0632E165FC400746785 /* FocusableView.swift in Sources */,
+				FA468AC72E065078001B1436 /* LoginVC.swift in Sources */,
+				FA94F1562E12AC850000E5DB /* ToggleButton.swift in Sources */,
+				FA45D01A2E14F6FC00746785 /* APIConstants.swift in Sources */,
+				FA45D00D2E141C5800746785 /* LocationCollCell.swift in Sources */,
+				FA45D0A32E169C9300746785 /* VPNManager.swift in Sources */,
+				FA45D0202E1542DC00746785 /* ServerListDataModel.swift in Sources */,
+				FA45D0A22E169C9300746785 /* keycahin.swift in Sources */,
+				FA94F14E2E12667B0000E5DB /* SettingTableCell.swift in Sources */,
+				FA94F1512E126D860000E5DB /* SettingModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077E42E017AA5007CA87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8077ED2E017AA5007CA87A /* EtherGuardVPNTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8077EE2E017AA5007CA87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8077F92E017AA5007CA87A /* EtherGuardVPNUITestsLaunchTests.swift in Sources */,
+				FA8077F72E017AA5007CA87A /* EtherGuardVPNUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA8077EA2E017AA5007CA87A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8077D42E017AA2007CA87A /* EtherGuardVPN */;
+			targetProxy = FA8077E92E017AA5007CA87A /* PBXContainerItemProxy */;
+		};
+		FA8077F42E017AA5007CA87A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8077D42E017AA2007CA87A /* EtherGuardVPN */;
+			targetProxy = FA8077F32E017AA5007CA87A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA8077DC2E017AA2007CA87A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8077DD2E017AA2007CA87A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA8077FA2E017AA5007CA87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.2;
+			};
+			name = Debug;
+		};
+		FA8077FB2E017AA5007CA87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA8077FD2E017AA5007CA87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R223G2DN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EtherGuardVPN/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Web-Guard-VPN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		FA8077FE2E017AA5007CA87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R223G2DN77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EtherGuardVPN/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Web-Guard-VPN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		FA8078002E017AA5007CA87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nil.EtherGuardVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherGuardVPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EtherGuardVPN";
+				TVOS_DEPLOYMENT_TARGET = 17.2;
+			};
+			name = Debug;
+		};
+		FA8078012E017AA5007CA87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nil.EtherGuardVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherGuardVPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EtherGuardVPN";
+				TVOS_DEPLOYMENT_TARGET = 17.2;
+			};
+			name = Release;
+		};
+		FA8078032E017AA5007CA87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nil.EtherGuardVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = EtherGuardVPN;
+			};
+			name = Debug;
+		};
+		FA8078042E017AA5007CA87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nil.EtherGuardVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = EtherGuardVPN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA8077D02E017AA2007CA87A /* Build configuration list for PBXProject "EtherGuardVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8077FA2E017AA5007CA87A /* Debug */,
+				FA8077FB2E017AA5007CA87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8077FC2E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8077FD2E017AA5007CA87A /* Debug */,
+				FA8077FE2E017AA5007CA87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8077FF2E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8078002E017AA5007CA87A /* Debug */,
+				FA8078012E017AA5007CA87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8078022E017AA5007CA87A /* Build configuration list for PBXNativeTarget "EtherGuardVPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8078032E017AA5007CA87A /* Debug */,
+				FA8078042E017AA5007CA87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA45D00F2E1424D700746785 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA45D0102E1424D700746785 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA45D00F2E1424D700746785 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FA45D0122E1424D700746785 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA45D00F2E1424D700746785 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA8077CD2E017AA2007CA87A /* Project object */;
+}

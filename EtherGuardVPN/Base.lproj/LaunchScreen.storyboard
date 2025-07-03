@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="22505" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Launch" id="BYZ-38-t0r" customClass="Launch" customModule="EtherGuardVPN" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iNS-TH-UH0"/>
+                        <viewControllerLayoutGuide type="bottom" id="kuo-lQ-fro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hxr-ou-6XU">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nEx-hC-wlt">
+                                        <rect key="frame" x="860" y="430" width="200" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="4ji-9Z-kCu"/>
+                                            <constraint firstAttribute="width" constant="200" id="NL7-OS-Lfn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etherguard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-Ca-2o7">
+                                        <rect key="frame" x="823" y="660" width="197" height="46"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                        <color key="textColor" name="logoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VPN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duv-5r-ket">
+                                        <rect key="frame" x="1030" y="660" width="78" height="46"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure. Fast. Unlimited." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJG-FU-Pi4">
+                                        <rect key="frame" x="857" y="716" width="206" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-Dx-2gw">
+                                        <rect key="frame" x="810" y="913" width="300" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="hDY-UC-NZB"/>
+                                        </constraints>
+                                        <color key="progressTintColor" name="logoColor"/>
+                                        <color key="trackTintColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initializing secure connection..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jju-8d-7GO">
+                                        <rect key="frame" x="796" y="943" width="328" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="bgColor"/>
+                                <constraints>
+                                    <constraint firstItem="a4S-Dx-2gw" firstAttribute="centerY" secondItem="Hxr-ou-6XU" secondAttribute="centerY" multiplier="1.7" id="3vo-CD-f1C"/>
+                                    <constraint firstItem="jju-8d-7GO" firstAttribute="centerX" secondItem="Hxr-ou-6XU" secondAttribute="centerX" id="Bnc-3T-mtd"/>
+                                    <constraint firstItem="Duv-5r-ket" firstAttribute="leading" secondItem="fVF-Ca-2o7" secondAttribute="trailing" constant="10" id="Mzs-uc-HX4"/>
+                                    <constraint firstItem="fVF-Ca-2o7" firstAttribute="centerX" secondItem="Hxr-ou-6XU" secondAttribute="centerX" multiplier="0.96" id="RXk-wr-NFy"/>
+                                    <constraint firstItem="Duv-5r-ket" firstAttribute="centerY" secondItem="fVF-Ca-2o7" secondAttribute="centerY" id="fbU-Ss-Eaa"/>
+                                    <constraint firstItem="nEx-hC-wlt" firstAttribute="centerY" secondItem="Hxr-ou-6XU" secondAttribute="centerY" id="hEl-5K-f49"/>
+                                    <constraint firstItem="kJG-FU-Pi4" firstAttribute="top" secondItem="fVF-Ca-2o7" secondAttribute="bottom" constant="10" id="m2A-5i-Abu"/>
+                                    <constraint firstItem="jju-8d-7GO" firstAttribute="top" secondItem="a4S-Dx-2gw" secondAttribute="bottom" constant="20" id="qlD-Lg-js0"/>
+                                    <constraint firstItem="nEx-hC-wlt" firstAttribute="centerX" secondItem="Hxr-ou-6XU" secondAttribute="centerX" id="rId-Jm-CtN"/>
+                                    <constraint firstItem="fVF-Ca-2o7" firstAttribute="top" secondItem="nEx-hC-wlt" secondAttribute="bottom" constant="10" id="thQ-nR-ZcJ"/>
+                                    <constraint firstItem="kJG-FU-Pi4" firstAttribute="centerX" secondItem="Hxr-ou-6XU" secondAttribute="centerX" id="xZ8-Rp-CUB"/>
+                                    <constraint firstItem="a4S-Dx-2gw" firstAttribute="centerX" secondItem="Hxr-ou-6XU" secondAttribute="centerX" id="yfX-fk-FMc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hxr-ou-6XU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ibt-8v-vsi"/>
+                            <constraint firstAttribute="bottom" secondItem="Hxr-ou-6XU" secondAttribute="bottom" id="X5Q-1l-6Vg"/>
+                            <constraint firstItem="Hxr-ou-6XU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="biu-TF-osy"/>
+                            <constraint firstAttribute="trailing" secondItem="Hxr-ou-6XU" secondAttribute="trailing" id="l9f-wm-zQz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="-73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="327" height="327"/>
+        <namedColor name="bgColor">
+            <color red="0.011764705882352941" green="0.027450980392156862" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="logoColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
